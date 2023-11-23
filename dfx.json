@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "BlockBash_React_backend": {
+      "main": "src/BlockBash_React_backend/main.mo",
+      "type": "motoko"
+    },
+    "BlockBash_React_frontend": {
+      "dependencies": [
+        "BlockBash_React_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/BlockBash_React_frontend/src/index.html"
+      },
+      "source": [
+        "src/BlockBash_React_frontend/assets",
+        "dist/BlockBash_React_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
